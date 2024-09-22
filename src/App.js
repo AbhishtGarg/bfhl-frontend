@@ -7,7 +7,7 @@ function App() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const res = await fetch('https://yourapp.herokuapp.com/bfhl', {
+      const res = await fetch('https://bfhl-backend1.vercel.com/bfhl', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(JSON.parse(jsonData)),
